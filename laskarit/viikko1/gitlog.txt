@@ -1,0 +1,246 @@
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+        deleted:    file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git restore file1
+error: pathspec 'file1' did not match any file(s) known to git
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git restore file1.txt
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git restore file2.txt
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git add .
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file3.txt
+
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git restore file3.txt
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file3.txt
+
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git restore --staged file3.txt
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git restore file3.txt
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>del file1.txt
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>ren "file2" "file22"
+The system cannot find the file specified.
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>ren "file2.txt" "file22.txt"
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git add -p
+diff --git a/tiedostoja/file1.txt b/tiedostoja/file1.txt
+index e69de29..0000000
+deleted file mode 100644
+(1/1) Stage deletion [y,n,q,a,d,?]? y
+
+diff --git a/tiedostoja/file2.txt b/tiedostoja/file2.txt
+index e69de29..0000000
+deleted file mode 100644
+(1/1) Stage deletion [y,n,q,a,d,?]? y
+
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file1.txt
+        deleted:    file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file22.txt
+
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git commit -m "poistettiin file1 ja nimettiin file2-> file22"
+[master 978e11e] poistettiin file1 ja nimettiin file2-> file22
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 tiedostoja/file1.txt
+ delete mode 100644 tiedostoja/file2.txt
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git log --stat | cat
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git log --stat | cat
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Jou\Desktop\Koulu\kurssit\ot_viikko1\tiedostoja>git log
+commit 978e11efa2d2cad208ee80b352e7262acbf55b54 (HEAD -> master)
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:30:29 2021 +0200
+
+    poistettiin file1 ja nimettiin file2-> file22
+
+commit b949916f40b327f3bae51ba88b3a089e8615dc41
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:23:34 2021 +0200
+
+    luotiin hakemisto tiedostoja ja file1, file2, file3
+
+commit 03ce7a758bed6005d0424845739f48134d4a7b62
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:17:42 2021 +0200
+
+    tehtiin muutoksia eka.txt ja kolmas.txt
+
+commit 3874322873b331c3b96580d98e3b5f811676ddcf
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:14:41 2021 +0200
+
+    uudelleen nimettiin tiedosto.txt eka.txt:ksi
+
+commit 191983a461da69a3a13a99f5ddef20003e79b71c
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:11:39 2021 +0200
+
+    poistettiin tiedosto toinen.txt
+:...skipping...
+commit 978e11efa2d2cad208ee80b352e7262acbf55b54 (HEAD -> master)
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:30:29 2021 +0200
+
+    poistettiin file1 ja nimettiin file2-> file22
+
+commit b949916f40b327f3bae51ba88b3a089e8615dc41
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:23:34 2021 +0200
+
+    luotiin hakemisto tiedostoja ja file1, file2, file3
+
+commit 03ce7a758bed6005d0424845739f48134d4a7b62
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:17:42 2021 +0200
+
+    tehtiin muutoksia eka.txt ja kolmas.txt
+
+commit 3874322873b331c3b96580d98e3b5f811676ddcf
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:14:41 2021 +0200
+
+    uudelleen nimettiin tiedosto.txt eka.txt:ksi
+
+commit 191983a461da69a3a13a99f5ddef20003e79b71c
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:11:39 2021 +0200
+
+    poistettiin tiedosto toinen.txt
+
+commit 1718428f3fc0a54657ea7a68b097bb948ff1090b
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:07:13 2021 +0200
+
+    poistettiin ja lisättiin testiä tiedostoon tiedosto.txt
+
+:...skipping...
+commit 978e11efa2d2cad208ee80b352e7262acbf55b54 (HEAD -> master)
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:30:29 2021 +0200
+
+    poistettiin file1 ja nimettiin file2-> file22
+
+commit b949916f40b327f3bae51ba88b3a089e8615dc41
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:23:34 2021 +0200
+
+    luotiin hakemisto tiedostoja ja file1, file2, file3
+
+commit 03ce7a758bed6005d0424845739f48134d4a7b62
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:17:42 2021 +0200
+
+    tehtiin muutoksia eka.txt ja kolmas.txt
+
+commit 3874322873b331c3b96580d98e3b5f811676ddcf
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:14:41 2021 +0200
+
+    uudelleen nimettiin tiedosto.txt eka.txt:ksi
+
+commit 191983a461da69a3a13a99f5ddef20003e79b71c
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:11:39 2021 +0200
+
+    poistettiin tiedosto toinen.txt
+
+commit 1718428f3fc0a54657ea7a68b097bb948ff1090b
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:07:13 2021 +0200
+
+    poistettiin ja lisättiin testiä tiedostoon tiedosto.txt
+commit 978e11efa2d2cad208ee80b352e7262acbf55b54 (HEAD -> master)
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:30:29 2021 +0200
+
+    poistettiin file1 ja nimettiin file2-> file22
+
+commit b949916f40b327f3bae51ba88b3a089e8615dc41
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:23:34 2021 +0200
+
+    luotiin hakemisto tiedostoja ja file1, file2, file3
+
+commit 03ce7a758bed6005d0424845739f48134d4a7b62
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:17:42 2021 +0200
+
+    tehtiin muutoksia eka.txt ja kolmas.txt
+
+commit 3874322873b331c3b96580d98e3b5f811676ddcf
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:14:41 2021 +0200
+
+    uudelleen nimettiin tiedosto.txt eka.txt:ksi
+
+commit 191983a461da69a3a13a99f5ddef20003e79b71c
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:11:39 2021 +0200
+
+    poistettiin tiedosto toinen.txt
+
+commit 1718428f3fc0a54657ea7a68b097bb948ff1090b
+Author: Joel <joel.pihlaja@helsinki.fi>
+Date:   Tue Nov 9 19:07:13 2021 +0200
+
+    poistettiin ja lisättiin testiä tiedostoon tiedosto.txt
+
+:

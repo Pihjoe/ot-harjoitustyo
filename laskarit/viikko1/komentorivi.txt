@@ -1,0 +1,14 @@
+C:\USERS\JOU\DESKTOP\KOULU\KURSSIT
+├───ot-harjoitustyo
+│   └───laskarit
+│       └───viikko1
+├───ot2021
+│   └───viikko1
+│       └───unicafe
+│           ├───unicafe
+│           │   └───src
+│           │       └───tests
+│           └───__MACOSX
+└───ot_viikko1
+    ├───stuff
+    └───tiedostoja
