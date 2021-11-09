@@ -1,7 +1,9 @@
-#Tämä on otsikko
+# OT-HARJOITUSTYÖ
 
-##Tämä on alaotsikko
+## Tämä on alaotsikko
 
-###Jotain lisää
+### Viikko 1:
 
-*tehdään jotain lisää*
+*linkit*
+[Gitlog](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
+[Komentorivi](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
