@@ -30,3 +30,9 @@ Alussa sovelluksessa vain "normaalikäyttäjä"
 [Gitlog](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
 
 [Komentorivi](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
+
+
+
+## Työaikakirjanpito
+
+16.11.2021 - 1h - Mietitty enemmän projektin päämäärää, ja kirjauksia gittiin
