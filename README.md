@@ -18,7 +18,7 @@ Alussa sovelluksessa vain "normaalikäyttäjä"
 - Käyttäjä pystyy kirjautumaan ulos
 
 
-
+[Tuntikirjanpito]()
 
 
 
@@ -32,7 +32,3 @@ Alussa sovelluksessa vain "normaalikäyttäjä"
 [Komentorivi](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
 
 
-
-## Työaikakirjanpito
-
-16.11.2021 - 1h - Mietitty enemmän projektin päämäärää, ja kirjauksia gittiin
