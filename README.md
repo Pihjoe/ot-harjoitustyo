@@ -18,7 +18,7 @@ Alussa sovelluksessa vain "normaalikäyttäjä"
 - Käyttäjä pystyy kirjautumaan ulos
 
 
-[Tuntikirjanpito]()
+[Tuntikirjanpito](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/Dokumentaatio/tuntikirjanpito.md)
 
 
 
