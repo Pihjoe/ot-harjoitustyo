@@ -27,8 +27,8 @@ Alussa sovelluksessa vain "normaalikäyttäjä"
 
 *linkit:* 
 
-[Gitlog](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
+[Gitlog](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko_1/gitlog.txt)
 
-[Komentorivi](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
+[Komentorivi](https://github.com/Pihjoe/ot-harjoitustyo/blob/main/laskarit/viikko_1/komentorivi.txt)
 
 
